@@ -312,7 +312,7 @@ export default function Home() {
 
         <div style={{ width: '100%', height: '400px', marginTop: '4rem' }}>
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.347712395646!2d73.8643806!3d18.4678864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eaf6c8a7b05d%3A0x6e7e452a265d6c8e!2sThe%20Lap-top%20Junction!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+            src="https://maps.google.com/maps?q=Shop%20No%2084%2C%201st%20Floor%2C%20Light%20House%2C%20Bibwewadi%20Kondhwa%20Rd%2C%20opp.%20Pune%20Adda%20Hotel%2C%20Parshwanath%20Nagar%2C%20Bibwewadi%2C%20Pune%2C%20Maharashtra%20411037&t=&z=15&ie=UTF8&iwloc=&output=embed" 
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 
