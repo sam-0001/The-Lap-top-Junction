@@ -200,17 +200,22 @@ export default function Home() {
             variants={staggerContainer}
           >
             {[
-              { icon: <Monitor size={24} />, title: 'Screen Replacement', desc: 'Replacing cracked, damaged, or malfunctioning screens.' },
-              { icon: <Cpu size={24} />, title: 'Motherboard Repair', desc: 'All brands motherboard at chip level basis. And fixing related issues.' },
-              { icon: <Battery size={24} />, title: 'Battery Replacement', desc: 'Replacing faulty or worn-out batteries to restore battery life.' },
-              { icon: <HardDrive size={24} />, title: 'Hardware Upgrades', desc: 'Upgrading components like SSDs, RAM, or replacing hardware.' },
-              { icon: <Wrench size={24} />, title: 'Fix Broken Body', desc: 'Fabrication of broken parts for any brand laptop body.' },
-              { icon: <Thermometer size={24} />, title: 'Water Damage', desc: 'Specialized recovery and repair for water-damaged laptops.' }
+              { icon: <Monitor size={24} />, title: 'Screen Replacement', desc: 'Replacing cracked, damaged, or malfunctioning screens.', img: '/img/unnamed.jpg' },
+              { icon: <Cpu size={24} />, title: 'Motherboard Repair', desc: 'All brands motherboard at chip level basis. And fixing related issues.', img: '/img/unnamed (1).jpg' },
+              { icon: <Battery size={24} />, title: 'Battery Replacement', desc: 'Replacing faulty or worn-out batteries to restore battery life.', img: '/img/unnamed (2).jpg' },
+              { icon: <HardDrive size={24} />, title: 'Hardware Upgrades', desc: 'Upgrading components like SSDs, RAM, or replacing hardware.', img: '/img/unnamed (3).jpg' },
+              { icon: <Wrench size={24} />, title: 'Fix Broken Body', desc: 'Fabrication of broken parts for any brand laptop body.', img: '/img/unnamed (4).jpg' },
+              { icon: <Thermometer size={24} />, title: 'Water Damage', desc: 'Specialized recovery and repair for water-damaged laptops.', img: '/img/unnamed (5).jpg' }
             ].map((service, idx) => (
-              <motion.div key={idx} variants={fadeInUp} className="card">
-                <div className="icon-container">{service.icon}</div>
-                <h3 className="heading mb-2" style={{ fontSize: '1.25rem' }}>{service.title}</h3>
-                <p style={{ color: 'var(--text-secondary)', lineHeight: '1.5' }}>{service.desc}</p>
+              <motion.div key={idx} variants={fadeInUp} className="card" style={{ padding: 0, overflow: 'hidden' }}>
+                <div style={{ height: '200px', width: '100%', position: 'relative', borderBottom: '1px solid var(--border-color)' }}>
+                  <img src={service.img} alt={service.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                </div>
+                <div style={{ padding: '1.5rem' }}>
+                  <div className="icon-container" style={{ marginTop: '-3rem', position: 'relative', zIndex: 10, background: 'var(--bg-secondary)', border: '1px solid var(--accent)' }}>{service.icon}</div>
+                  <h3 className="heading mb-2" style={{ fontSize: '1.25rem' }}>{service.title}</h3>
+                  <p style={{ color: 'var(--text-secondary)', lineHeight: '1.5' }}>{service.desc}</p>
+                </div>
               </motion.div>
             ))}
           </motion.div>
@@ -240,12 +245,26 @@ export default function Home() {
             variants={staggerContainer}
           >
             {[
-              'Laptop Keyboards', 'Laptop Fans', 'Genuine Batteries', 'Software Solutions',
-              'Overheating Solutions', 'HD Screens', 'Adapters & Chargers', 'Heat Sinks',
-              'Display Cables', 'Touchpads', 'RAM Upgrades', 'HDD & SSDs'
+              { title: 'Laptop Keyboards', img: '/img/unnamed (6).jpg' },
+              { title: 'Laptop Fans', img: '/img/unnamed (7).jpg' },
+              { title: 'Genuine Batteries', img: '/img/unnamed (8).jpg' },
+              { title: 'Software Solutions', img: '/img/unnamed (9).jpg' },
+              { title: 'Overheating Solutions', img: '/img/unnamed (10).jpg' },
+              { title: 'HD Screens', img: '/img/unnamed (11).jpg' },
+              { title: 'Adapters & Chargers', img: '/img/unnamed (12).jpg' },
+              { title: 'Heat Sinks', img: '/img/unnamed (13).jpg' },
+              { title: 'Display Cables', img: '/img/unnamed (14).jpg' },
+              { title: 'Touchpads', img: '/img/unnamed.png' },
+              { title: 'RAM Upgrades', img: '/img/unnamed (1).jpg' },
+              { title: 'HDD & SSDs', img: '/img/unnamed (2).jpg' }
             ].map((product, idx) => (
-              <motion.div key={idx} variants={fadeInUp} className="card" style={{ padding: '1.5rem', textAlign: 'center' }}>
-                <h3 className="heading" style={{ fontSize: '1.125rem' }}>{product}</h3>
+              <motion.div key={idx} variants={fadeInUp} className="card" style={{ padding: 0, textAlign: 'center', overflow: 'hidden' }}>
+                <div style={{ height: '150px', width: '100%', borderBottom: '1px solid var(--border-color)' }}>
+                  <img src={product.img} alt={product.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                </div>
+                <div style={{ padding: '1.5rem' }}>
+                  <h3 className="heading" style={{ fontSize: '1.125rem' }}>{product.title}</h3>
+                </div>
               </motion.div>
             ))}
           </motion.div>
