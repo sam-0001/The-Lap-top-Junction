@@ -312,13 +312,13 @@ export default function Home() {
 
         <div style={{ width: '100%', height: '400px', marginTop: '4rem' }}>
           <iframe 
-            src="https://maps.google.com/maps?q=Shop%20No%2084%2C%201st%20Floor%2C%20Light%20House%2C%20Bibwewadi%20Kondhwa%20Rd%2C%20opp.%20Pune%20Adda%20Hotel%2C%20Parshwanath%20Nagar%2C%20Bibwewadi%2C%20Pune%2C%20Maharashtra%20411037&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.0672561020015!2d73.86294869999999!3d18.4806125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eb63e427bb33%3A0x7d46dbb740bae06f!2sThe%20Laptop%20Junction%20Pune!5e0!3m2!1sen!2sin!4v1786081606536!5m2!1sen!2sin" 
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 
             allowFullScreen={true} 
             loading="lazy" 
-            referrerPolicy="no-referrer-when-downgrade"
+            referrerPolicy="strict-origin-when-cross-origin"
             title="Google Maps Location"
           ></iframe>
         </div>
