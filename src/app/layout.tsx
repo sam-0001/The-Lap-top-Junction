@@ -41,8 +41,8 @@ export default function RootLayout({
         
         <main>{children}</main>
 
-        <a href="https://wa.me/919309263699?text=Hi%2C%20I%20need%20some%20help%20with%20my%20laptop.%20Can%20I%20get%20a%20free%20diagnosis%3F" target="_blank" rel="noopener noreferrer" className="floating-whatsapp" aria-label="Chat on WhatsApp">
-          <MessageCircle size={32} />
+        <a href="https://wa.me/919309263699?text=Hi%2C%20I%20need%20some%20help%20with%20my%20laptop.%20Can%20I%20get%20a%20free%20diagnosis%3F" target="_blank" rel="noopener noreferrer" className="floating-whatsapp" aria-label="Chat on WhatsApp" style={{ padding: 0, overflow: 'hidden' }}>
+          <img src="/img/whatsapp_logo.jpg" alt="WhatsApp Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         </a>
 
         <footer className="footer">
