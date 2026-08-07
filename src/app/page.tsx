@@ -72,13 +72,13 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             style={{ flex: '1 1 400px', position: 'relative' }}
           >
-            <div style={{ position: 'relative', width: '100%', aspectRatio: '4/3', borderRadius: '1rem', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0, 229, 255, 0.15)', border: '1px solid var(--border-color)' }}>
+            <div style={{ position: 'relative', width: '100%', aspectRatio: '4/3', borderRadius: '1rem', overflow: 'hidden', boxShadow: '0 20px 40px rgba(37, 99, 235, 0.15)', border: '1px solid var(--border-color)' }}>
               <img 
                 src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&q=80&w=800" 
                 alt="Laptop Motherboard Repair" 
                 style={{ objectFit: 'cover', width: '100%', height: '100%' }}
               />
-              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top right, rgba(0,229,255,0.2), transparent)' }}></div>
+              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top right, rgba(37,99,235,0.1), transparent)' }}></div>
             </div>
           </motion.div>
         </div>
@@ -297,17 +297,30 @@ export default function Home() {
               </a>
             </div>
             
-            <div style={{ display: 'flex', gap: '2rem', marginTop: '3rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)' }}>
-                <MapPin size={20} className="text-accent" />
-                <span>Pune, Maharashtra</span>
+            <div style={{ display: 'flex', gap: '2rem', marginTop: '3rem', flexWrap: 'wrap', justifyContent: 'center', textAlign: 'left' }}>
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem', color: 'var(--text-secondary)', maxWidth: '300px' }}>
+                <MapPin size={24} className="text-accent" style={{ flexShrink: 0, marginTop: '4px' }} />
+                <span>Shop No 84, 1st Floor, Light House, Bibwewadi Kondhwa Rd, opp. Pune Adda Hotel, Parshwanath Nagar, Bibwewadi, Pune, Maharashtra 411037</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)' }}>
-                <Clock size={20} className="text-accent" />
-                <span>Fast Turnaround</span>
+                <Clock size={24} className="text-accent" style={{ flexShrink: 0 }} />
+                <span>Fast & Reliable Turnaround</span>
               </div>
             </div>
           </motion.div>
+        </div>
+
+        <div style={{ width: '100%', height: '400px', marginTop: '4rem' }}>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.347712395646!2d73.8643806!3d18.4678864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eaf6c8a7b05d%3A0x6e7e452a265d6c8e!2sThe%20Lap-top%20Junction!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+            width="100%" 
+            height="100%" 
+            style={{ border: 0 }} 
+            allowFullScreen={true} 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Google Maps Location"
+          ></iframe>
         </div>
       </section>
     </>
