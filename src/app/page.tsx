@@ -200,12 +200,12 @@ export default function Home() {
             variants={staggerContainer}
           >
             {[
-              { icon: <Monitor size={24} />, title: 'Screen Replacement', desc: 'Replacing cracked, damaged, or malfunctioning screens.', img: '/img/unnamed.jpg' },
-              { icon: <Cpu size={24} />, title: 'Motherboard Repair', desc: 'All brands motherboard at chip level basis. And fixing related issues.', img: '/img/unnamed (1).jpg' },
-              { icon: <Battery size={24} />, title: 'Battery Replacement', desc: 'Replacing faulty or worn-out batteries to restore battery life.', img: '/img/unnamed (2).jpg' },
-              { icon: <HardDrive size={24} />, title: 'Hardware Upgrades', desc: 'Upgrading components like SSDs, RAM, or replacing hardware.', img: '/img/unnamed (3).jpg' },
-              { icon: <Wrench size={24} />, title: 'Fix Broken Body', desc: 'Fabrication of broken parts for any brand laptop body.', img: '/img/unnamed (4).jpg' },
-              { icon: <Thermometer size={24} />, title: 'Water Damage', desc: 'Specialized recovery and repair for water-damaged laptops.', img: '/img/unnamed (5).jpg' }
+              { icon: <Monitor size={24} />, title: 'Screen Replacement', desc: 'Replacing cracked, damaged, or malfunctioning screens.', img: '/img/unnamed.png' },
+              { icon: <Cpu size={24} />, title: 'Motherboard Repair', desc: 'All brands motherboard at chip level basis. And fixing related issues.', img: '/img/unnamed (4).jpg' },
+              { icon: <Battery size={24} />, title: 'Battery Replacement', desc: 'Replacing faulty or worn-out batteries to restore battery life.', img: '/img/unnamed (13).jpg' },
+              { icon: <HardDrive size={24} />, title: 'Hardware Upgrades', desc: 'Upgrading components like SSDs, RAM, or replacing hardware.', img: '/img/unnamed (12).jpg' },
+              { icon: <Wrench size={24} />, title: 'Fix Broken Body', desc: 'Fabrication of broken parts for any brand laptop body.', img: '/img/unnamed (10).jpg' },
+              { icon: <Thermometer size={24} />, title: 'Water Damage', desc: 'Specialized recovery and repair for water-damaged laptops.', img: '/img/unnamed (14).jpg' }
             ].map((service, idx) => (
               <motion.div key={idx} variants={fadeInUp} className="card" style={{ padding: 0, overflow: 'hidden' }}>
                 <div style={{ height: '200px', width: '100%', position: 'relative', borderBottom: '1px solid var(--border-color)' }}>
@@ -246,17 +246,17 @@ export default function Home() {
           >
             {[
               { title: 'Laptop Keyboards', img: '/img/unnamed (6).jpg' },
-              { title: 'Laptop Fans', img: '/img/unnamed (7).jpg' },
-              { title: 'Genuine Batteries', img: '/img/unnamed (8).jpg' },
-              { title: 'Software Solutions', img: '/img/unnamed (9).jpg' },
-              { title: 'Overheating Solutions', img: '/img/unnamed (10).jpg' },
+              { title: 'Laptop Fans', img: '/img/unnamed (1).jpg' },
+              { title: 'Genuine Batteries', img: '/img/unnamed (2).jpg' },
+              { title: 'Software Solutions', img: '/img/unnamed (3).jpg' },
+              { title: 'Overheating Solutions', img: '/img/unnamed (5).jpg' },
               { title: 'HD Screens', img: '/img/unnamed (11).jpg' },
-              { title: 'Adapters & Chargers', img: '/img/unnamed (12).jpg' },
-              { title: 'Heat Sinks', img: '/img/unnamed (13).jpg' },
-              { title: 'Display Cables', img: '/img/unnamed (14).jpg' },
-              { title: 'Touchpads', img: '/img/unnamed.png' },
-              { title: 'RAM Upgrades', img: '/img/unnamed (1).jpg' },
-              { title: 'HDD & SSDs', img: '/img/unnamed (2).jpg' }
+              { title: 'Adapters & Chargers', img: '/img/unnamed (7).jpg' },
+              { title: 'Heat Sinks', img: '/img/unnamed (8).jpg' },
+              { title: 'Display Cables', img: '/img/unnamed (9).jpg' },
+              { title: 'Touchpads', img: '/img/unnamed.jpg' },
+              { title: 'RAM Upgrades', img: '/img/unnamed (14).jpg' },
+              { title: 'HDD & SSDs', img: '/img/unnamed (12).jpg' }
             ].map((product, idx) => (
               <motion.div key={idx} variants={fadeInUp} className="card" style={{ padding: 0, textAlign: 'center', overflow: 'hidden' }}>
                 <div style={{ height: '150px', width: '100%', borderBottom: '1px solid var(--border-color)' }}>
